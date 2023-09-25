@@ -1,0 +1,36 @@
+function skillsMember() {
+	var skills = document.getElementById("skills");
+	var skillsMember = document.getElementById("skillsMember");
+	var skillsMemberValue = skillsMember.value;
+	var skillsMemberText = skillsMember.options[skillsMember.selectedIndex].text;
+	var skillsMemberText = skillsMemberText.toLowerCase();
+	var skillsMemberText = skillsMemberText.replace(/\s/g, '');
+	var skillsMemberText = skillsMemberText.replace(/\//g, '');
+	var skillsMemberText = skillsMemberText.replace(/,/g, '');
+	var skillsMemberText = skillsMemberText.replace(/&/g, '');
+	var skillsMemberText = skillsMemberText.replace(/-/g, '');
+	var skillsMemberText = skillsMemberText.replace(/'/g, '');
+	var skillsMemberText = skillsMemberText.replace(/\./g, '');
+	var skillsMemberText = skillsMemberText.replace(/:/g, '');
+	var skillsMemberText = skillsMemberText.replace(/;/g, '');
+	var skillsMemberText = skillsMemberText.replace(/\(/g, '');
+	var skillsMemberText = skillsMemberText.replace(/\)/g, '');
+	var skillsMemberText = skillsMemberText.replace(/!/g, '');
+	var skillsMemberText = skillsMemberText.replace(/\?/g, '');
+	var skillsMemberText = skillsMemberText.replace(/#/g, '');
+	var skillsMemberText = skillsMemberText.replace(/@/g, '');
+	var skillsMemberText = skillsMemberText.replace(/%/g, '');
+	var skillsMemberText = skillsMemberText.replace(/=/g, '');
+	var skillsMemberText = skillsMemberText.replace(/\+/g, '');
+	var skillsMemberText = skillsMemberText.replace(/_/g, '');
+	var skillsMemberText = skillsMemberText.replace(/</g, '');
+	var skillsMemberText = skillsMemberText.replace(/>/g, '');
+	var skillsMemberText = skillsMemberText.replace(/\\/g, '');
+	var skillsMemberText = skillsMemberText.replace(/\|/g, '');
+	var skillsMemberText = skillsMemberText.replace(/\[/g, '');
+	var skillsMemberText = skillsMemberText.replace(/\]/g, '');
+	var skillsMemberText = skillsMemberText.replace(/{/g, '');
+	var skillsMemberText = skillsMemberText.replace(/}/g, '');
+	var skillsMemberText = skillsMemberText.replace(/`/g, '');
+	var skillsMemberText = skillsMemberText.replace(/~/g, '');
+}
